@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ScreenVoice Reader</string>
+    <string name="notification_channel_name">Floating Reader Service</string>
+</resources>

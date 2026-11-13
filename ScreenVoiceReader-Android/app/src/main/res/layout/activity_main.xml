@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScreenVoice Reader"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read English text aloud from Google Classroom PDFs, Gallery photos, or any app using a floating bubble."
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overlay Permission: Checking..."
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#11000000"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnOverlayPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Grant Overlay Permission"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnStartReader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Start Floating Bubble"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnStopReader"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Floating Bubble"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvSpeedLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading Speed: 1.0x"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:id="@+id/seekSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="15"
+        android:progress="5"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
